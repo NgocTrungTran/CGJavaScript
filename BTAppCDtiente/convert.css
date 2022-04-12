@@ -1,0 +1,8 @@
+table {
+    width: 50%;
+    text-align: center;
+}
+#result {
+    border: none;
+    outline: none;
+}

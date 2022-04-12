@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Ứng dụng chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="convert.css">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>Form Currency</th>
+                <th>To Currency</th>    
+            </tr>
+            <tr>
+                <td><input type="number" id="sotien"></td>
+                <td>
+                    <select>
+                        <option>Việt Nam</option>
+                        <option>USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>USD</option>
+                        <option>Việt Nam</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" onclick="convert()" style="color:white; background-color: blueviolet; border-radius: 3px; border-color: blue;">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Result:
+                <label><input type="number" id="result">VND</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script src="script.js"></script>
