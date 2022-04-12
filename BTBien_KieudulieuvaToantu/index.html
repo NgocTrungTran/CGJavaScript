@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Bien, kieu du lieu va toan tu</title>
+</head>
+<body>
+    <!-- Bài 1 -->
+    <h1>Bài 1</h1>
+    <form>
+        <table>
+            <caption>Tính điểm tổng và điểm trung bình của một học sinh</caption>
+            <tr>
+                <td for="dl">Điểm Vật lý</td>
+                <td><input type="number" min="0" max="10" id="dl"></td>
+            </tr>
+            <tr>
+                <td for="dh">Điểm Hóa học</td>
+                <td><input type="number" min="0" max="10" id="dh"></td>
+            </tr>
+            <tr>
+                <td for="ds">Điểm Sinh học</td>
+                <td><input type="number" min="0" max="10" id="ds"></td>
+            </tr>
+            <tr>
+                <td>Điểm trung bình</td>
+                <td><input type="number" id="ketqua1" readonly></td>
+            </tr>
+            <tr>
+                <td>Điểm tổng</td>
+                <td><input type="number" id="ketqua2" readonly></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="additional()">Kết quả</button></td>
+                <td><input type="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+    <!-- Bài 2 -->
+    <h1>Bài 2</h1>
+    <form>
+        <table>
+            <caption>Đổi nhiệt độ C sang F</caption>
+            <tr>
+                <td>Nhập nhiệt độ C:</td>
+                <td><input type="number" name="nhietdo" id="nd"></td>
+            </tr>
+            <tr>
+                <td>Kết quả:</td>
+                <td><input type="number" id="kq"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="ketqua()">Chuyển đổi</button></td>
+                <td><input type="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>    
+    <!-- Bài 3 -->
+    <h1>Bài 3</h1>
+    <form>
+    <table>
+        <caption>Tính diện tích hình tròn</caption>
+        <tr>
+            <td>Nhập bán kính</td>
+            <td><input type="number" id="bk"></td>
+        </tr>
+        <tr>
+            <td>Hoặc nhập đường kính</td>
+            <td><input type="number" id="dk"></td>
+        </tr>
+        <tr>
+            <td>Diện tích hình tròn theo bán kính:</td>
+            <td><input type="number" id="dtbk"></td>
+        </tr>
+        <tr>
+            <td>Diện tích hình tròn theo đường kính:</td>
+            <td><input type="number" id="dtdk"></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="dthinhtron()">Tính</button>
+            <input type="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+    </form>
+    <!-- Bài 4 -->
+    <h1>Bài 4</h1>
+    <form>
+        <table>
+            <caption>Tính chu vi hình tròn</caption>
+            <tr>
+                <td>Nhập bán kính</td>
+                <td><input type="number" id="bk1"></td>
+            </tr>
+            <tr>
+                <td>Hoặc nhập đường kính</td>
+                <td><input type="number" id="dk1"></td>
+            </tr>
+            <tr>
+                <td>Chu vi hình tròn theo bán kính:</td>
+                <td><input type="number" id="cvbk"></td>
+            </tr>
+            <tr>
+                <td>Chu vi hình tròn theo đường kính:</td>
+                <td><input type="number" id="cvdk"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="cvhinhtron()">Tính</button>
+                <input type="reset" value="Nhập lại"></td>
+            </tr>    
+        </table>
+    </form>
+    
+</body>
+</html>
+<script src="script.js"></script>
