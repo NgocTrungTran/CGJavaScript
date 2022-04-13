@@ -10,11 +10,11 @@
 
 let value = prompt('Type a number',);
 let x = value;
-switch (x) {
-    case 0:
+switch (true) {
+    case x > 0:
         alert(1);
         break
-    case 1:
+    case x < 0:
         alert(-1);
         break 
     default:
