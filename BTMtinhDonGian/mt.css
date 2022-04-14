@@ -1,0 +1,21 @@
+form {
+    border-collapse: collapse;
+    border: solid;
+    width: 178px;
+}
+table {    
+    text-align: center;
+    
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    padding: 3px 11px;
+    border: groove;
+    margin: 10%;
+    width: 90%;
+}
+input {
+    color: blue;
+    text-align: right;
+}
