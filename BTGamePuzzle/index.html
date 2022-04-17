@@ -65,7 +65,7 @@
 
         indexArr = Math.floor(Math.random() * 4);
         imgIndex[0] = indexArr;
-        img1.src = "./image/" + imgArr[indexArr][0] + ".jpg";
+        img1.src = "./image/" + imageArr[indexArr][0] + ".jpg";
 
         img1.addEventListener("click", function() {
             if (!block) {
@@ -79,7 +79,7 @@
         console.log('Before:' + index)
         indexArr = randomIndex(index);
         console.log('After:' + indexArr)
-        elem.src = "./image/" + imgArr[indexArr][position] + ".jpg";
+        elem.src = "./image/" + imageArr[indexArr][position] + ".jpg";
         imgIndex[position] = indexArr;
 
         if (imgIndex[0] == imgIndex[1]) {
