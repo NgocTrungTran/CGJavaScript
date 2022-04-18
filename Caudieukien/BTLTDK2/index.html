@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Luyen tap DK 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //Bài 1: Chuyển từ độ C sang độ F.
+    // let C = parseInt(prompt('Nhập độ C:'));
+    // let F = C * 9 / 5 + 32;
+    // alert("Nhiệt độ F là: " + F);
+
+    
+    //Bài 2: Chuyển từ mét sang feet:
+    // let met = parseInt(prompt('Nhập met:'));
+    // let feet = met * 3.2808;
+    // alert("Chiều dài feet là: " + feet);
+
+
+    //Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+    // let a = parseInt(prompt('Nhập cạnh a:'));
+    // if (a > 0) {
+    // alert("Diện tích hình vuông là: " + (a * a));
+    // }
+
+
+    //Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.
+    // let a = parseInt(prompt('Nhập cạnh a:'));
+    // let b = parseInt(prompt('Nhập cạnh b:'));
+    // if (a > 0 && b > 0) {
+    // alert('Diện tích hình CN là: ' + (a*b);
+    // }
+
+
+    //Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+    // let a = parseInt(prompt('Nhập cạnh a:'));
+    // let b = parseInt(prompt('Nhập cạnh b:'));
+    //  if (a > 0 && b > 0) {
+    //     alert('Diện tích hình TG vuông là: ' + (a*b)/2);
+    // }
+
+
+    //Bài 6: Giải phương trình bậc 1.
+    // let a = parseInt(prompt('Nhập a:'));
+    // let b = parseInt(prompt('Nhập b:'));
+    // if (a == 0) {
+    //     alert("PT vô nghiệm");
+    // } else {
+    //     alert("PT có nghiệm x là: " + (-b)/a);
+    // }
+
+
+    //Bài 7: Giải phương trình bậc 2.
+    // let a = parseInt(prompt('Nhập a:'));
+    // let b = parseInt(prompt('Nhập b:'));
+    // let c = parseInt(prompt('Nhập c:'));
+    // let delta = b*b - 4*a*c
+    //     if (delta < 0) {
+    //         alert("PT vô nghiệm");
+    //     } else if (delta == 0) {
+    //         alert("PT có nghiệm kép x = " + (-b)/2*a);
+    //     } else {
+    //         alert("PT có hai nghiệm: x1 = " + (-b + Math.sqrt(delta))/2*a + ", x2 = " + (-b - Math.sqrt(delta))/2*a);
+    //     }
+
+
+    //Bài 8:  Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+    // let age = Number(prompt('Nhập tuổi: '));
+    // if (age > 0 && age < 120 && Number.isInteger(age)) {
+    //     alert("Tuổi hợp lệ");
+    // } else {
+    //     alert("Tuổi không hợp lệ");
+    // }
+
+
+    //Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+    // let a = parseInt(prompt('Nhập cạnh a:'));
+    // let b = parseInt(prompt('Nhập cạnh b:'));
+    // let c = parseInt(prompt('Nhập cạnh c:'));
+    // if (a > 0 && b > 0 && c > 0) {
+    //     if ((a + b) >c) {
+    //         if ((b + c) > a) {
+    //             if ((a + c) > b) {
+    //                 alert("Ba số vừa nhập là cạnh của một tam giác");
+    //             } else 
+    //                 alert("Ba số vừa nhập không phải là cạnh của một tam giác");
+    //         } else 
+    //             alert("Ba số vừa nhập không phải là cạnh của một tam giác");
+    //     } else 
+    //         alert("Ba số vừa nhập không phải là cạnh của một tam giác");
+    // } else 
+    //     alert("Ba số vừa nhập không phải là cạnh của một tam giác");
+
+
+    //Bài 10: Viết chương trình tính giá điện.
+    // let kWh = parseInt(prompt('Nhập số kW/h đã sử dụng: '));
+    // if (kWh > 0 && kWh <= 50) {
+    //     alert("Số tiền điện là: " + kWh * 1549 + "VND");
+    // } else if (kWh > 50 && kWh <= 100) {
+    //     alert("Số tiền điện là: " + formatNumber(50 * 1549 + (kWh - 50) * 1600) + "VND");
+    // } else if (kWh > 100 && kWh <= 200) {
+    //     alert("Số tiền điện là: " + (50 * 1549 + 50 * 1600 + (kWh - 100) * 1858) + "VND");
+    // } else if (kWh > 200 && kWh <= 300) {
+    //     alert("Số tiền điện là: " + (50 * 1549 + 50 * 1600 + 100 * 1858 + (kWh - 200) * 2340) + "VND");
+    // } else if (kWh > 300 && kWh <= 400) {
+    //     alert("Số tiền điện là: " + (50 * 1549 + 50 * 1600 + 100 * 1858 + 100 * 2340 + (kWh - 300) * 2615) + "VND");
+    // } else if (kWh > 400) {
+    //     alert("Số tiền điện là: " + (50 * 1549 + 50 * 1600 + 100 * 1858 + 100 * 2340 + 100 * 2615 + (kWh - 400) * 2701) + "VND");
+    // } else {
+    //     alert("Số điện không hợp lệ");
+    // }
+    
+
+    //Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+</script>
