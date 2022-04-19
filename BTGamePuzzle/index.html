@@ -4,117 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BT Game Puzzle</title>
-    <style>
-        img {
-            display: block;
-            margin: 1px;
-            padding: 1px;
-            box-shadow: 2px 3px 3px black;
-            width: 300px;
-            height: 100px;
-        }
-    </style>
+    <title>Game Puzzle</title>
 </head>
 <body>
-    <div id ="puz">  
-            <img id="img1" src="" alt="">
-            <img id="img2" src="" alt="">
-            <img id="img3" src="" alt="">
-            <img id="img4" src="" alt="">   
-    </div>
+    <img id="img1" src="image/a1.jpg" onclick="changeImg1()">
+    <img id="img2" src="image/b3.jpg" onclick="changeImg2()">
+    <img id="img3" src="image/c2.jpg" onclick="changeImg3()">
+    <img id="img4" src="image/d4.jpg" onclick="changeImg4()">
 </body>
 </html>
 <script>
-    debugger;
-    var Imgarr = [
-        [
-            'dawn1',
-            'dawn2',
-            'dawn3',
-            'dawn4',
-        ],
-        [
-            'Lake1',
-            'Lake2',
-            'Lake3',
-            'Lake4',
-        ],
-        [
-            'Mountain2',
-            'Mountain3',
-            'Mountain1',
-            'Mountain4',
-        ],
-        [
-            'Sea1',
-            'Sea2',
-            'Sea3',
-            'Sea4',
-        ],
-    ]
-    let imgIndex = [0,0,0,0];
-    let indexArr = 0;
-    let block = false;
+    var image1 = document.querySelector('#img1');
+    var image2 = document.querySelector('#img2');
+    var image3 = document.querySelector('#img3');
+    var image4 = document.querySelector('#img4');
+    var imageName1;
+    var imageName2;
+    var imageName3;
+    var imageName4;
 
-    function drawOnLoad () {
-        let img1 = document.getElementById('img1');
-        let img2 = document.getElementById('img2');
-        let img3 = document.getElementById('img3');
-        let img4 = document.getElementById('img4');
-
-        indexArr = Math.floor(Math.random() * 4);
-        imgIndex[0] = indexArr;
-        img1.src = "./image/" + imageArr[indexArr][0] + ".jpg";
-
-        img1.addEventListener("click", function() {
-            if (!block) {
-                changeImage(img1, 0, imgIndex[0]);
-            }
-        })
-
-
-    }
-    function changeImage(elem, position, index) {
-        console.log('Before:' + index)
-        indexArr = randomIndex(index);
-        console.log('After:' + indexArr)
-        elem.src = "./image/" + imageArr[indexArr][position] + ".jpg";
-        imgIndex[position] = indexArr;
-
-        if (imgIndex[0] == imgIndex[1]) {
-            block = true;
-            setTimeout(function() {
-                alert("Ok");
-            }, 1000);
+    function changeImg1() {
+        imageName1 = Math.floor(Math.random() * 4 + 1);
+        image1.src = `image/a${imageName1}.jpg`;
+        console.log(imageName1);
+        if (imageName1 == imageName2 && imageName2 == imageName3 && imageName3 == imageName4 && imageName4 == imageName1) {
+                alert('done');
         }
     }
-    function randomIndex(index) {
-            let random = 0;
-
-            do {
-                random = Math.floor(Math.random() * 4);
-            }
-            while(random == index)
-
-            return random;
-        }
-        
-
-    
-    function ImageClick(seclect1) {
-    for (i = 0; i <= 2; i++) {
-
-        seclect1 = document.getElementById('img1').src;
-        seclect1.src = `./img/${imgArr[i]}.jpg`;
+    function changeImg2() {
+        imageName2 = Math.floor(Math.random() * 4 + 1);
+        image2.src = `image/b${imageName2}.jpg`;
+        console.log(imageName2);
+        if (imageName1 == imageName2 && imageName2 == imageName3 && imageName3 == imageName4 && imageName4 == imageName1) {
+                alert('done');
         }
     }
-    function load() {
-            let ramdom1 = document.getElementById('img1');
-            let ramdom2 = document.getElementById('img2');
-            let ramdom3 = document.getElementById('img3');
-            let ramdom4 = document.getElementById('img4');
-            let ramdom5 = document.getElementById('img5');
+    function changeImg3() {
+        imageName3 = Math.floor(Math.random() * 4 + 1);
+        image3.src = `image/c${imageName3}.jpg`;
+        console.log(imageName3);
+        if (imageName1 == imageName2 && imageName2 == imageName3 && imageName3 == imageName4 && imageName4 == imageName1) {
+                alert('done');
+        }
     }
-    load();
+    function changeImg4() {
+        imageName4 = Math.floor(Math.random() * 4 + 1);
+        image4.src = `image/d${imageName4}.jpg`;
+        console.log(imageName4);
+        if (imageName1 == imageName2 && imageName2 == imageName3 && imageName3 == imageName4 && imageName4 == imageName1) {
+                alert('done');
+        }
+    }
 </script>
