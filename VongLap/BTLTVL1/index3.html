@@ -10,3 +10,26 @@
     
 </body>
 </html>
+<script>
+    let num = parseInt(prompt('Nhập số lượng số trong dãy fibonacci muốn hiển thị: '));
+    let count;
+    let n = 1;
+    let Fn;
+    while (count < num) {
+        // if (n == 1) {
+        // document.write(n + '');
+        // count++;
+        // }
+        // if (n == 2) {
+        //     Fn = 1;
+        //     document.write(fn + '');
+        //     count++;
+        // }
+        if (n > 2) {
+            for (i = 3; i < n; i++) {
+                Fn = (i-1) + (i-2);
+                console.log(Fn);
+            }
+        }
+    }
+</script>
