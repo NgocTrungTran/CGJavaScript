@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT su dung ca ham co san cua mang</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //Bai 1:
+    let myColor = ["Red", "Green", "While", "Black"];
+    document.write(myColor.toString() + "<br>");
+    document.write(myColor.join() + "<br>" + "<br>");
+
+
+    //Bai 2:
+    let num = 12463687;
+    // parseInt(prompt('Nhap vao mot day so: '));
+    let string = num.toString();
+    let array = [string[0]];
+    for (let i = 1; i < string.length; i++) {
+        if ((string[i - 1] % 2 === 0) && (string[i] % 2 === 0)) {
+            array.push('-', string[i])
+        } 
+        else {
+            array.push(string[i]);
+        }
+    } document.write(array.join('') + "<br>" + "<br>");
+
+
+    //Bai 3
+    let chuoi = prompt('Nhap chuoi: ');
+
+    const UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lower = "abcdefghijklmnopqrstuvwxyz";
+
+    let array1 = [];
+    for (let i = 0; i < chuoi.length; i++) {
+        if (UPPER.includes(chuoi[i])) {
+            array1.push(chuoi[i].toLowerCase());
+        }
+        else if (lower.includes(chuoi[i])) {
+            array1.push(chuoi[i].toUpperCase());
+        }
+        else {
+            array1.push(chuoi[i]);
+        }
+    }
+    document.write('Chuoi ' + chuoi + ' chuyen thanh ' + array1.join(''));
+
+</script>
