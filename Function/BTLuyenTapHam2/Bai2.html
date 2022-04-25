@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+</head>
+<body>
+    <label for="number">Nhap ban kinh: <input type="number" id="number"></label>
+    <button onclick="dienTichChuVi(value)">Ket qua</button>
+    <p>Dien tich: <span id="dt"></span></p>
+    <p>Chu vi: <span id="cv"></span></p>
+</body>
+</html>
+<script>
+    function dienTichChuVi(num) { 
+        const pi = 3.14159;
+        num = parseFloat(document.getElementById('number').value);
+        let dt = pi * num * num;
+        let cv = num * 2 * pi;
+        document.getElementById('dt').innerHTML = dt;
+        document.getElementById('cv').innerHTML = cv;
+    }
+</script>
