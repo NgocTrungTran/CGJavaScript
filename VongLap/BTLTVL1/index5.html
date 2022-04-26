@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 7</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let num = new Array(100);
+    for (let i = 0; i < num.length; i++) {
+        num[i] = i + 1;
+        if (num[i]%15 == 0) {
+            num[i] = 'FizzBuzz';
+        }
+        if (num[i]%3 == 0) {
+            num[i] = 'Fizz';
+        }
+        if (num[i]%5 == 0) {
+            num[i] = 'Buzz';
+        }
+    }document.write(num);
+</script>
